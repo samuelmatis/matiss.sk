@@ -14,8 +14,8 @@ address { display: inline; }
 .container li[class='skill'] { font-family: 'Rosarivo', serif; width: 33.333%; float: left; }
 .project { margin-bottom: 40px; margin-left: 15px; margin-top: 10px; }
 hr {  border: 0;  height: 1px; }
-r:before { top: -0.5em; height: 1em; }
-r:after { content:''; height: 0.5em; top: 1px; }
+hr:before { top: -0.5em; height: 1em; }
+hr:after { content:''; height: 0.5em; top: 1px; }
 hr:before, hr:after { content: ''; position: absolute; width: 100%; }
 hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 90%); }
 body, hr:after { background: #f4f4f4; }
