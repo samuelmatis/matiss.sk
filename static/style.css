@@ -3,6 +3,7 @@
 a { color: #3b8bba; text-decoration: none; }
 footer { margin-bottom: 50px; }
 address { display: inline; }
+ul > li { font-family: 'Esteban' }
 .container h1 { font-size: 3em; margin-bottom: 0px !important; font-family: 'Fanwood Text', serif; }
 .container h2 { margin-top: 0px !important; font-family: 'Rosarivo', serif; margin-bottom: 30px; }
 .container h3 { font-family: 'Rosarivo', serif; }
