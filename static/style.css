@@ -21,6 +21,8 @@ hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0
 .container ul[id='skills'] { width: 760px; margin-bottom: 20px; overflow: hidden; }
 .container ul[id='skills'] > li { font-family: 'Rosarivo', serif; width: 33.333%; float: left; }
 
+#profile { width: 180px; }
+
 .project { margin-bottom: 40px; margin-left: 15px; margin-top: 10px; }
 .project-img { width: 200px; }
 
