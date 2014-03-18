@@ -10,19 +10,20 @@
     <link rel="stylesheet" type="text/css" href="pure.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rosarivo|Esteban|Fanwood+Text">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
     <div class="container pure-g">
         <div class="pure-u-1-1">
             <header>
                 <h1>Samuel Matis</h1>
-                <h2>JavaScript developer</h2>
+                <h2>JavaScript developer @<a href="http://wtfall.com" target="_blank">Waterfall</a></h2>
                 <img src="images/foto.png" id="profile">
             </header>
 
             <section>
                 <h3>About me</h3>
-                <p>I am a JavaScript application developer. I develop modern single page web applications with Backbone.js and Marionette with Python (Flask) or Node.js API.</p>
+                <p>I am a JavaScript Front End developer. I develop modern single page web applications with AngularJS or Backbone.js and Marionette with Python (Flask) or Node.js API.</p>
                 <p>I am currently learning Google Closure library, Angular.JS and advanced JavaScript techniques.</p>
             </section>
 
@@ -34,11 +35,11 @@
                     <li>JavaScript</li>
                     <li>Backbone.js</li>
                     <li>Marionette</li>
+                    <li>AngularJS</li>
                     <li>Node.js</li>
                     <li>HTML5</li>
                     <li>CSS3</li>
-                    <li>Python</li>
-                    <li>Flask</li>
+                    <li>Python (Flask)</li>
                     <li>MongoDB</li>
                 </ul>
             </section>
@@ -53,27 +54,29 @@
                         <img src="images/langmaster.png" class="project-img">
                     </div>
 
-                    <div class="pure-u-1-2">
+                    <div class="pure-u-3-5">
                         <h4><a href="http://www.langmaster.io">Langmaster.io</a></h4>
                         <p>Web application for smarter memorizing vocabulary of a foreign language.</p>
                         <p>Technologies:</p>
                         <ul>
                             <li>Backbone.js with Marionette</li>
                             <li>Twitter Bootstrap</li>
-                            <li>Python (Flask)</li>
+                            <li>Python (Flask) API</li>
                             <li>MongoDB</li>
                             <li>OAuth</li>
                         </ul>
-                        In development @<a href="http://github.com/samuelmatis/words"><i>GitHub</i></a>
+                        Available as open source @<a href="http://github.com/samuelmatis/langmaster.io"><i>GitHub</i></a>
                     </div>
                 </div>
+
+                <hr>
 
                 <div class="project">
                     <div class="pure-u-1-4">
                         <img src="images/viera.png" class="project-img">
                     </div>
 
-                    <div class="pure-u-1-2">
+                    <div class="pure-u-3-5">
                         <h4><a href="http://github.com/samuelmatis/viera-control">Viera control</a></h4>
                         <p>Control your Panasonic Viera TV with simple REST API and mobile optimized UI.</p>
                         <p>Technologies:</p>
@@ -81,7 +84,27 @@
                             <li>Twitter Bootstrap</li>
                             <li>Node.JS API</li>
                         </ul>
-                        <a href="http://github.com/samuelmatis/viera-control"><i>GitHub page</i></a>
+                        Available as open source @<a href="http://github.com/samuelmatis/viera-control"><i>GitHub</i></a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="project">
+                    <div class="pure-u-1-4">
+                        <img src="images/discoveraarhus.png" class="project-img">
+                    </div>
+
+                    <div class="pure-u-3-5">
+                        <h4><a href="http://wtfall.com/projects/discoveraarhus.html">Discover Aarhus</a></h4>
+                        <p>Discover beautiful handpicked places in Aarhus. From students for students.</p>
+                        <p>Technologies:</p>
+                        <ul>
+                            <li>AngularJS</li>
+                            <li>Python (Flask) API</li>
+                            <li>Google Maps V3 API</li>
+                        </ul>
+                        <a href="http://wtfall.com/projects/discoveraarhus.html"><i>Project description &amp; showcase</i></a>
                     </div>
                 </div>
             </section>
@@ -109,13 +132,25 @@
     </div>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        // Google analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-45979901-1', 'matiss.sk');
-      ga('send', 'pageview');
+        ga('create', 'UA-45979901-1', 'matiss.sk');
+        ga('send', 'pageview');
+
+        // Woopra
+        (function(){
+            var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],
+            c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};
+            for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",
+                e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+        })("woopra");
+
+        woopra.config({domain: 'matiss.sk'});
+        woopra.track();
 
     </script>
 </body>
