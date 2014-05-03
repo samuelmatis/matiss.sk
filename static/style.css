@@ -26,7 +26,7 @@ hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0
 #profile { width: 210px; }
 
 .project { margin-bottom: 40px; margin-left: 15px; margin-top: 10px; }
-.project-img { width: 200px; }
+.project-img { width: 200px; border:1px solid #F8F8F8;}
 
 .footer-br { margin-bottom: 10px; }
 
