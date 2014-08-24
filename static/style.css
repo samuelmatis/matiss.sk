@@ -8,36 +8,36 @@ header { margin-bottom: 30px; }
 footer { margin-bottom: 50px; }
 address { display: inline; }
 ul > li { font-family: 'Esteban' }
-hr {  border: 0;  height: 1px; }
+hr { border: 0;  height: 1px; }
 hr:before { top: -0.5em; height: 1em; }
 hr:after { content:''; height: 0.5em; top: 1px; }
-hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 90%); }
+hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 80%); margin-top: 30px; margin-bottom: 30px; }
 
 .pure-u-3-5 { width: 60%; margin-left: 50px; }
 
 .container h1 { font-size: 3em; margin-bottom: 10px !important; font-family: 'Fanwood Text', serif; }
-.container h2 { margin-top: 0px !important; font-family: 'Rosarivo', serif; margin-bottom: 5px; }
-.container h2.last { margin-bottom: 30px; }
+.container h2 { margin-top: 0px !important; font-family: 'Rosarivo', serif; margin-bottom: 5px; margin-bottom: 30px; }
 .container h3 { font-family: 'Rosarivo', serif; }
 .container h4 { font-family: 'Rosarivo', serif; margin-bottom: 10px; margin-top: 5px; }
+.container span.company { font-family: 'Rosarivo', serif; font-size: 16px; }
 .container p { font-family: 'Esteban', serif; margin-bottom: 10px; }
 .container ul[id='skills'] { width: 760px; margin-bottom: 20px; overflow: hidden; }
 .container ul[id='skills'] > li { font-family: 'Rosarivo', serif; width: 33.333%; float: left; margin-bottom: 2px;}
 
 #profile { width: 210px; }
 
-.project { margin-bottom: 40px; margin-left: 15px; margin-top: 10px; }
+.project { margin-left: 15px; }
 .project-img { width: 200px; border:1px solid #F8F8F8;}
 
 .footer-br { margin-bottom: 10px; }
 
 @media screen and (max-width: 960px) {
-	.container { padding-left: 15px; padding-right: 15px; line-height: 1.5;}
-	.pure-u-1-4 { display: block; width: 100%; }
-	.pure-u-3-5 { display: block; margin-top: 20px; width: 100%; margin-left: 0px;}
-	.pure-u-3-5 > p { margin-top: 20px; }
+    .container { padding-left: 15px; padding-right: 15px; line-height: 1.5;}
+    .pure-u-1-4 { display: block; width: 100%; }
+    .pure-u-3-5 { display: block; margin-top: 20px; width: 100%; margin-left: 0px;}
+    .pure-u-3-5 > p { margin-top: 20px; }
 }
 
 @media screen and (max-width: 720px) {
-	.container ul[id='skills'] > li { width: 100%; }
+    .container ul[id='skills'] > li { width: 100%; }
 }
