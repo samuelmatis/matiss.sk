@@ -51,6 +51,30 @@
             <section>
                 <h3>My Projects</h3>
 
+                <div class="project" id="paga">
+                    <div class="pure-u-1-4">
+                        <img src="images/paga.png" class="project-img">
+                    </div>
+
+                    <div class="pure-u-3-5">
+                        <h4><a href="https://paga.io/" target="_blank">PAGA.io</a></h4>
+                        <span class="sub">In progress...</span>
+                        <p>Never forget your subscriptions payments again. Get an overview of your subscriptions with notifications to pay them.</p>
+                        <p>Technologies:</p>
+                        <ul>
+                            <li>AngularJS</li>
+                            <li>SCSS</li>
+                            <li>Twitter Bootstrap</li>
+                            <li>Node.JS API</li>
+                            <li>OAuth</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        Link: <a href="https://paga.io/" target="_blank"><i>Paga.io</i></a>
+                    </div>
+                </div>
+
+                <hr>
+
                 <div class="project" id="discovercity">
                     <div class="pure-u-1-4">
                         <img src="images/discoveraarhus.png" class="project-img">
@@ -127,7 +151,7 @@
 
                     <div class="pure-u-3-5">
                         <h4><a href="http://zastavmekorupciu.sk/" target="_blank">Zastavme Korupciu</a></h4>
-                        <span class="company">(Phirational)</span>
+                        <span class="sub">(Phirational)</span>
                         <p>Slovak corruption whistleblowing platform - our aim is to minimize corruption and its devastating impact on quality of life and business in Slovakia.</p>
                         <p>Technologies:</p>
                         <ul>
@@ -154,7 +178,7 @@
 
                     <div class="pure-u-3-5">
                         <h4><a href="http://opineon.com/" target="_blank">Opineon</a></h4>
-                        <span class="company">(Phirational)</span>
+                        <span class="sub">(Phirational)</span>
                         <p>The most successful brands are those with the best understanding of their customers. Start a meaningful conversation with your customers today.</p>
                         <p>Technologies:</p>
                         <ul>
@@ -181,7 +205,7 @@
 
                     <div class="pure-u-3-5">
                         <h4><a href="http://withlove.sk/" target="_blank">WithLove</a></h4>
-                        <span class="company">(Phirational)</span>
+                        <span class="sub">(Phirational)</span>
                         <p>Map of Slovak start-up ecosystem. It consists of start-ups, investors, community hubs and co-working spaces.</p>
                         <p>Technologies:</p>
                         <ul>
@@ -232,16 +256,16 @@
         ga('create', 'UA-45979901-1', 'matiss.sk');
         ga('send', 'pageview');
 
-        // Woopra
-        (function(){
-            var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],
-            c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};
-            for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",
-                e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-        })("woopra");
-
-        woopra.config({domain: 'matiss.sk'});
-        woopra.track();
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 490688209]);
+        (function() {
+            function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+            if (window.attachEvent){
+                window.attachEvent('onload', __ldinsp);
+            }else{
+                window.addEventListener('load', __ldinsp, false);
+            }
+        })();
 
     </script>
 </body>
