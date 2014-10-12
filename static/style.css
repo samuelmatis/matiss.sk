@@ -24,7 +24,7 @@ hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0
 .container ul[id='skills'] { margin-bottom: 20px; overflow: hidden; }
 .container ul[id='skills'] > li { font-family: 'Rosarivo', serif; width: 33.333%; float: left; margin-bottom: 2px;}
 
-.github-badge img { position: absolute; top: 0; right: 0; border: 0;}
+.github-badge img { position: fixed; top: 0; right: 0; border: 0;}
 
 #profile { width: 210px; }
 
