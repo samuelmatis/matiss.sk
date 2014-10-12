@@ -41,7 +41,7 @@ hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0
 }
 
 @media screen and (max-width: 720px) {
-    .container ul[id='skills'] > li { width: 100%; }
+    .container ul[id='skills'] > li { width: 48%; }
 }
 
 @media screen and (max-width: 550px) {
