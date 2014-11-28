@@ -21,6 +21,7 @@ hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0
 .container h4 { font-family: 'Rosarivo', serif; margin-bottom: 10px; margin-top: 5px; }
 .container span.sub { font-family: 'Rosarivo', serif; font-size: 16px; }
 .container p { font-family: 'Esteban', serif; margin-bottom: 10px; }
+.container p.hireme { color: rgb(202, 46, 46); font-weight: 600; }
 .container ul[id='skills'] { margin-bottom: 20px; overflow: hidden; }
 .container ul[id='skills'] > li { font-family: 'Rosarivo', serif; width: 33.333%; float: left; margin-bottom: 2px;}
 
