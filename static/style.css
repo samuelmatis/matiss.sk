@@ -16,7 +16,7 @@ hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0
 .pure-u-3-5 { width: 60%; margin-left: 50px; }
 
 .container h1 { font-size: 3em; margin-bottom: 10px !important; font-family: 'Fanwood Text', serif; }
-.container h2 { margin-top: 0px !important; font-family: 'Rosarivo', serif; margin-bottom: 10px; }
+.container h2 { margin-top: 0px !important; font-family: 'Rosarivo', serif; margin-bottom: 5px; }
 .container h2.last { margin-bottom: 30px; }
 .container h3 { font-family: 'Rosarivo', serif; }
 .container h4 { font-family: 'Rosarivo', serif; margin-bottom: 10px; margin-top: 5px; }
