@@ -48,5 +48,7 @@ hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0
 
 @media screen and (max-width: 550px) {
     .github-badge { display: none; }
+    .container h1 { font-size: 2.5em; margin-top: 10px; }
+    .container h2 { font-size: 1.2em; margin-bottom: 5px; }
 }
 
