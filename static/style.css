@@ -1,54 +1,168 @@
-body, hr:after { background: #fff; -webkit-font-smoothing: antialiased; }
-
-.pure-g { letter-spacing: 0em; }
-.container { max-width: 740px; margin: 0 auto; }
-
-a { color: #3b8bba; text-decoration: none; }
-header { margin-bottom: 30px; }
-footer { margin-bottom: 50px; }
-address { display: inline; }
-ul > li { font-family: 'Esteban' }
-hr { border: 0;  height: 1px; }
-hr:before { top: -0.5em; height: 1em; }
-hr:after { content: ''; height: 0.5em; top: 1px; }
-hr, hr:before { background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 80%); margin-top: 30px; margin-bottom: 30px; }
-
-.pure-u-3-5 { width: 60%; margin-left: 50px; }
-
-.container h1 { font-size: 3em; margin-bottom: 10px !important; font-family: 'Fanwood Text', serif; }
-.container h2 { margin-top: 0px !important; font-family: 'Rosarivo', serif; margin-bottom: 5px; }
-.container h2.last { margin-bottom: 30px; }
-.container h3 { font-family: 'Rosarivo', serif; }
-.container h4 { font-family: 'Rosarivo', serif; margin-bottom: 10px; margin-top: 5px; }
-.container span.sub { font-family: 'Rosarivo', serif; font-size: 16px; }
-.container p { font-family: 'Esteban', serif; margin-bottom: 10px; line-height: 1.5; }
-.container p.hireme { color: rgb(202, 46, 46); font-weight: 600; }
-.container ul[id='skills'] { margin-bottom: 20px; overflow: hidden; }
-.container ul[id='skills'] > li { font-family: 'Rosarivo', serif; width: 33.333%; float: left; margin-bottom: 2px;}
-
-.github-badge img { position: fixed; top: 0; right: 0; border: 0;}
-
-#profile { width: 210px; }
-
-.project { margin-left: 15px; }
-.project-img { width: 200px; border: 1px solid #F8F8F8; }
-
-.footer-br { margin-bottom: 10px; }
-
-@media screen and (max-width: 960px) {
-    .container { padding-left: 15px; padding-right: 15px; line-height: 1.5; }
-    .pure-u-1-4 { display: block; width: 100%; }
-    .pure-u-3-5 { display: block; margin-top: 20px; width: 100%; margin-left: 0px; }
-    .pure-u-3-5 > p { margin-top: 20px; }
+body {
+    font-size: 100%;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
 }
 
-@media screen and (max-width: 720px) {
-    .container ul[id='skills'] > li { width: 48%; }
+h1, h2, h3, h4 {
+    font-family: 'Rosarivo', serif;
 }
 
-@media screen and (max-width: 550px) {
-    .github-badge { display: none; }
-    .container h1 { font-size: 2.5em; margin-top: 10px; }
-    .container h2 { font-size: 1.2em; margin-bottom: 5px; }
+p, li, .sub {
+    font-family: 'Esteban', serif;
+    letter-spacing: 0.02em;
 }
 
+.container {
+    max-width: 46.25em;
+    margin: 0 auto;
+}
+
+a {
+    color: #3b8bba;
+    text-decoration: none;
+}
+
+header, footer {
+    margin-bottom: 3.125em;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    margin-bottom: 1.875em;
+}
+
+h4 {
+    margin-bottom: 0.625em;
+    margin-top: 0.3125em;
+}
+
+.sub {
+    font-style: italic;
+}
+
+p {
+    margin-bottom: 0.625em;
+    line-height: 1.5em;
+}
+
+p.hireme {
+    color: #CA2E2E;
+    font-weight: bold;
+}
+
+.skills {
+    margin-bottom: 1.25em;
+    overflow: hidden;
+}
+
+.skills > li {
+    width: 33.333%;
+    float: left;
+    margin-bottom: 0.125em;
+}
+
+.skills:after {
+    clear: both;
+}
+
+.github-badge img {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.profile-img {
+    max-width: 13.125em;
+}
+
+.project {
+    margin-left: 0.9375em;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project-img {
+    width: 12.5em;
+}
+
+section:after {
+    content: '';
+    display: block;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0));
+    height: 0.0625em;
+    margin-top: 1.875em;
+    margin-bottom: 1.875em;
+}
+
+.project:after {
+    content: '';
+    display: block;
+    border-bottom: 0.0625em dashed #ccc;
+    margin-top: 1.875em;
+    margin-bottom: 1.875em;
+}
+
+.project:last-child:after {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 60em) {
+    .container {
+        padding-left: 0.9375em;
+        padding-right: 0.9375em;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 45em) {
+    .skills > li {
+        width: 48%;
+    }
+
+    .pure-u-8-24 {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .pure-u-15-24 {
+        display: block;
+        margin-top: 1.25em;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pure-u-15-24 > h4 {
+        text-align: center;
+    }
+
+    .pure-u-15-24 > p {
+        margin-top: 1.25em;
+    }
+}
+
+@media screen and (max-width: 34.375em) {
+    .github-badge {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-top: 0.625em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 0.3125em;
+    }
+}
